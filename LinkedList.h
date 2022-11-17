@@ -56,6 +56,12 @@ namespace LinkedList {
 			this->tail = this->tail->next;
 		}
 
+		void insert_head(type value) {
+			Node<type>* oldHead = this->head;
+			this->head = new Node<type>(value);
+			this->head->next = oldHead;
+		}
+
 		void insert(Node<type>* node, type value) {
 			Node<type>* next = node->next;
 			node->next = new Node<type>(value);
