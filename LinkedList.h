@@ -69,12 +69,12 @@ namespace LinkedList {
 		}
 
 		void append(List<type>* list) {
-			for (Node<type>* i = this->head; i != nullptr; i = i->next)
-				list->push(i->value);
+			for (Node<type>* i = list->head; i != nullptr; i = i->next)
+				this->push(i->value);
 		}
 		
 		void copy(List<type>* list) {
-			list->clear();
+			this->clear();
 			this->append(list);
 		}
 
