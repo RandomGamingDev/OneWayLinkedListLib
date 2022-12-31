@@ -57,12 +57,14 @@ namespace LinkedList {
 		}
 
 		void insert_head(type value) {
+			this->length++;
 			Node<type>* oldHead = this->head;
 			this->head = new Node<type>(value);
 			this->head->next = oldHead;
 		}
 
 		void insert(Node<type>* node, type value) {
+			this->length++;
 			Node<type>* next = node->next;
 			node->next = new Node<type>(value);
 			node->next->next = next;
