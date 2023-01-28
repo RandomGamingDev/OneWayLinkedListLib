@@ -3,7 +3,7 @@
 
 // A simple one way linked list that stores the head and tail of the list
 
-namespace LinkedList {
+namespace Linked {
 	template <typename type>
 	struct Node {
 		type value;
