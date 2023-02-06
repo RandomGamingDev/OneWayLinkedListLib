@@ -2,6 +2,7 @@
 #define LINKED_LIST_HEADER
 
 // A simple one way linked list that stores the head and tail of the list
+#include <stddef.h>
 
 namespace Linked {
 	template <typename type>
