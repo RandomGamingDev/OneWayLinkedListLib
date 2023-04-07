@@ -111,6 +111,13 @@ namespace Linked {
 			this->erase_head();
 			this->length = 0;
 		}
+		
+		Node<type>* ind(size_t i) {
+			Node<type>* toReturn = this->head;
+			for (; i > 0; i--)
+				toReturn = toReturn->next;
+			return toReturn;
+		}
 	};
 };
 
